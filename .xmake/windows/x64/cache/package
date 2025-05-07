@@ -1,0 +1,26 @@
+{
+    gtest = {
+        __requireconfs = {
+            configs = {
+                main = false,
+                gmock = true
+            }
+        },
+        libfiles = {
+            [[C:\Users\loren\AppData\Local\.xmake\packages\g\gtest\v1.16.0\51e8f9ba50ff4208b65b4e8dc6cd93e4\lib\gmock.lib]],
+            [[C:\Users\loren\AppData\Local\.xmake\packages\g\gtest\v1.16.0\51e8f9ba50ff4208b65b4e8dc6cd93e4\lib\gtest.lib]]
+        },
+        installdir = [[C:\Users\loren\AppData\Local\.xmake\packages\g\gtest\v1.16.0\51e8f9ba50ff4208b65b4e8dc6cd93e4]],
+        __enabled = true,
+        sysincludedirs = [[C:\Users\loren\AppData\Local\.xmake\packages\g\gtest\v1.16.0\51e8f9ba50ff4208b65b4e8dc6cd93e4\include]],
+        linkdirs = [[C:\Users\loren\AppData\Local\.xmake\packages\g\gtest\v1.16.0\51e8f9ba50ff4208b65b4e8dc6cd93e4\lib]],
+        links = {
+            "gmock",
+            "gtest"
+        },
+        version = "v1.16.0",
+        static = true,
+        __requirestr = "gtest",
+        license = "BSD-3"
+    }
+}

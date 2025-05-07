@@ -1,0 +1,51 @@
+[
+{
+  "directory": "C:\\Users\\kabah\\OneDrive\\Documents\\GitHub\\thermal_propagation",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/W3", "/WX", "/O2", "/std:c++latest", "/Isrc", "/EHsc", "/IC:\\Users\\kabah\\AppData\\Local\\.xmake\\packages\\g\\gtest\\v1.16.0\\51e8f9ba50ff4208b65b4e8dc6cd93e4\\include", "/DNDEBUG", "/Fobuild\\.objs\\bms\\windows\\x64\\release\\tests\\bms.cc.obj", "tests\\bms.cc"],
+  "file": "tests\\bms.cc"
+},
+{
+  "directory": "C:\\Users\\kabah\\OneDrive\\Documents\\GitHub\\thermal_propagation",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/W3", "/WX", "/O2", "/std:c++latest", "/Isrc", "/EHsc", "/IC:\\Users\\kabah\\AppData\\Local\\.xmake\\packages\\g\\gtest\\v1.16.0\\51e8f9ba50ff4208b65b4e8dc6cd93e4\\include", "/DNDEBUG", "/Fobuild\\.objs\\calibration\\windows\\x64\\release\\tests\\calibration.cc.obj", "tests\\calibration.cc"],
+  "file": "tests\\calibration.cc"
+},
+{
+  "directory": "C:\\Users\\kabah\\OneDrive\\Documents\\GitHub\\thermal_propagation",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/W3", "/WX", "/O2", "/std:c++latest", "/Isrc", "/EHsc", "/IC:\\Users\\kabah\\AppData\\Local\\.xmake\\packages\\g\\gtest\\v1.16.0\\51e8f9ba50ff4208b65b4e8dc6cd93e4\\include", "/DNDEBUG", "/Fobuild\\.objs\\datamapper\\windows\\x64\\release\\tests\\datamapper.cc.obj", "tests\\datamapper.cc"],
+  "file": "tests\\datamapper.cc"
+},
+{
+  "directory": "C:\\Users\\kabah\\OneDrive\\Documents\\GitHub\\thermal_propagation",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/W3", "/WX", "/O2", "/std:c++latest", "/Isrc", "/EHsc", "/IC:\\Users\\kabah\\AppData\\Local\\.xmake\\packages\\g\\gtest\\v1.16.0\\51e8f9ba50ff4208b65b4e8dc6cd93e4\\include", "/DNDEBUG", "/Fobuild\\.objs\\sensor\\windows\\x64\\release\\tests\\sensor.cc.obj", "tests\\sensor.cc"],
+  "file": "tests\\sensor.cc"
+},
+{
+  "directory": "C:\\Users\\kabah\\OneDrive\\Documents\\GitHub\\thermal_propagation",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/W3", "/WX", "/O2", "/std:c++latest", "/Isrc", "/EHsc", "/DNDEBUG", "/Fobuild\\.objs\\bmsmonitor\\windows\\x64\\release\\src\\BMSMonitor.cpp.obj", "src\\BMSMonitor.cpp"],
+  "file": "src\\BMSMonitor.cpp"
+},
+{
+  "directory": "C:\\Users\\kabah\\OneDrive\\Documents\\GitHub\\thermal_propagation",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/W3", "/WX", "/O2", "/std:c++latest", "/Isrc", "/EHsc", "/DNDEBUG", "/Fobuild\\.objs\\bmsmonitor\\windows\\x64\\release\\src\\Calibration.cpp.obj", "src\\Calibration.cpp"],
+  "file": "src\\Calibration.cpp"
+},
+{
+  "directory": "C:\\Users\\kabah\\OneDrive\\Documents\\GitHub\\thermal_propagation",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/W3", "/WX", "/O2", "/std:c++latest", "/Isrc", "/EHsc", "/DNDEBUG", "/Fobuild\\.objs\\bmsmonitor\\windows\\x64\\release\\src\\TestDataToSensorMapper.cpp.obj", "src\\TestDataToSensorMapper.cpp"],
+  "file": "src\\TestDataToSensorMapper.cpp"
+},
+{
+  "directory": "C:\\Users\\kabah\\OneDrive\\Documents\\GitHub\\thermal_propagation",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/W3", "/WX", "/O2", "/std:c++latest", "/Isrc", "/EHsc", "/DNDEBUG", "/Fobuild\\.objs\\bmsmonitor\\windows\\x64\\release\\src\\Log.cpp.obj", "src\\Log.cpp"],
+  "file": "src\\Log.cpp"
+},
+{
+  "directory": "C:\\Users\\kabah\\OneDrive\\Documents\\GitHub\\thermal_propagation",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/W3", "/WX", "/O2", "/std:c++latest", "/Isrc", "/EHsc", "/DNDEBUG", "/Fobuild\\.objs\\bmsmonitor\\windows\\x64\\release\\src\\Sensor.cpp.obj", "src\\Sensor.cpp"],
+  "file": "src\\Sensor.cpp"
+},
+{
+  "directory": "C:\\Users\\kabah\\OneDrive\\Documents\\GitHub\\thermal_propagation",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/W3", "/WX", "/O2", "/std:c++latest", "/Isrc", "/EHsc", "/DNDEBUG", "/Fobuild\\.objs\\main\\windows\\x64\\release\\src\\Main.cpp.obj", "src\\Main.cpp"],
+  "file": "src\\Main.cpp"
+}]

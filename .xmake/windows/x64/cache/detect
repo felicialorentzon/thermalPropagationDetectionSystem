@@ -1,0 +1,53 @@
+{
+    ["lib.detect.has_flags"] = {
+        ["windows_x64_C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe_19.43.34808_cxx__-nologo_-O2"] = true,
+        ["windows_x64_C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe_19.43.34808_cxx_cxflags_-nologo_cl_sourceDependencies"] = true,
+        ["windows_x64_C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe_19.43.34808_cxx_cxflags_-nologo_cl_external_includedir"] = true,
+        ["windows_x64_C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe_19.43.34808_cxx_cxflags_-nologo_-DNDEBUG"] = true
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolar = {
+        ["link.exe"] = [[C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\link.exe]]
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolld = {
+        ["link.exe"] = [[C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\link.exe]]
+    },
+    find_program = {
+        ["C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe"] = [[C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\cl.exe]],
+        nim = false,
+        ["cl.exe"] = [[C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\cl.exe]],
+        gzip = false,
+        git = "git",
+        ["7z"] = [[C:\Program Files\xmake\winenv\bin\7z]],
+        ping = "ping"
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolcxx = {
+        ["cl.exe"] = [[C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\cl.exe]]
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolcc = {
+        ["cl.exe"] = [[C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\cl.exe]]
+    },
+    find_package_windows_x64_fetch_package_xmake = {
+        ["xmake::gtest_51e8f9ba50ff4208b65b4e8dc6cd93e4_release_v1.16.0_external"] = {
+            sysincludedirs = {
+                [[C:\Users\loren\AppData\Local\.xmake\packages\g\gtest\v1.16.0\51e8f9ba50ff4208b65b4e8dc6cd93e4\include]]
+            },
+            version = "v1.16.0",
+            libfiles = {
+                [[C:\Users\loren\AppData\Local\.xmake\packages\g\gtest\v1.16.0\51e8f9ba50ff4208b65b4e8dc6cd93e4\lib\gmock.lib]],
+                [[C:\Users\loren\AppData\Local\.xmake\packages\g\gtest\v1.16.0\51e8f9ba50ff4208b65b4e8dc6cd93e4\lib\gtest.lib]]
+            },
+            linkdirs = {
+                [[C:\Users\loren\AppData\Local\.xmake\packages\g\gtest\v1.16.0\51e8f9ba50ff4208b65b4e8dc6cd93e4\lib]]
+            },
+            static = true,
+            license = "BSD-3",
+            links = {
+                "gmock",
+                "gtest"
+            }
+        }
+    },
+    find_programver = {
+        ["C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe"] = "19.43.34808"
+    }
+}
