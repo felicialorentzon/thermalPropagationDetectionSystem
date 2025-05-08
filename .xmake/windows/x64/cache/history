@@ -1,8 +1,5 @@
 {
     cmdlines = {
-        "xmake check",
-        [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]],
-        [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\config.lua]],
         [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]],
         [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\config.lua]],
         [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]],
@@ -63,6 +60,10 @@
         "xmake build",
         [[xmake lua "C:\\\\Program Files\\\\xmake\\\\modules\\\\private\\\\utils\\\\statistics.lua"]],
         [[xmake lua "C:\\\\Program Files\\\\xmake\\\\actions\\\\build\\\\cleaner.lua"]],
-        "xmake run"
+        "xmake run",
+        [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]],
+        [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\config.lua]],
+        [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]],
+        [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]]
     }
 }

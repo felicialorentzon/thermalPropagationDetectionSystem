@@ -38,10 +38,8 @@ private:
 
     // data file paths containing simulated sensor data (for testing)
     std::string m_dataFileAddress; 
-    std::string m_dataFileNoPropagationNoPressureSensor = "../../../../src/no_propagation_data.csv";
-    std::string m_dataFileNoPropagationWithPressureSensor = "../../../../src/no_propagation_with_pressure.csv";
+    std::string m_dataFileNoPropagation = "../../../../src/no_propagation_data.csv";
     std::string m_dataFileBasedOnPropagationResearch = "../../../../src/propagation_data.csv";
-    std::string m_dataFilePropagationWithPressureSensor = "../../../../src/propagation_with_pressure.csv";
 
     // indexes and checks used to update values for sensor instances,
     // one data point at a time. Be careful when tampering.
