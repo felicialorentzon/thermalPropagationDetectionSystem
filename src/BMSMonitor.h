@@ -17,7 +17,7 @@ struct incident {
 
 class BMSMonitor {
 public:
-    std::pair<bool, float> evaluateNewTestData(Calibration& calibration, TestDataToSensorMapper& dataMapper);
+    bool evaluateNewTestData(Calibration& calibration, TestDataToSensorMapper& dataMapper);
     void setIfPressureSensorExist(bool state);
     std::vector<Sensor>& getAllSensorsVectorAddress();
     void removeUnrelatedIncidents(Calibration& calibrationInstance);
@@ -27,6 +27,7 @@ public:
     std::vector<incident> getAllIncidentsForTesting();
     bool getIfPropagationDetectedForTesting();
     void eraseAllIncidentsForTesting();
+    float getLatestPropagationTimeForTesting();
 private:
     Log log;
     float calculateAbsoluteRateOfChange(float deltaValue, float deltaTime);

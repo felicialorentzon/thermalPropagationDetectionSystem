@@ -7,8 +7,6 @@
         [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]],
         [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\config.lua]],
         [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]],
-        [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\config.lua]],
-        [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]],
         [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]],
         [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\config.lua]],
         "xmake test -v",
@@ -64,6 +62,8 @@
         [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]],
         [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\config.lua]],
         [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]],
-        [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]]
+        [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]],
+        [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\explorer.lua]],
+        [[xmake l c:\Users\loren\.vscode\extensions\tboox.xmake-vscode-2.4.0\assets\config.lua]]
     }
 }

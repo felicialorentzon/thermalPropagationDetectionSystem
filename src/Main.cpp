@@ -1,7 +1,18 @@
-#include "Main.h"
+#include "BMSMonitor.h"
+#include "Log.h"
+#include "TestDataToSensorMapper.h"
+#include "Calibration.h"
+
+Log m_logInstance;
+BMSMonitor m_BMSMonitorInstance;
+Calibration m_calibrationInstance;
+TestDataToSensorMapper m_dataToSensorMapperInstance;
+bool m_propagationDetected = false;
+// for testing 
+bool m_firstTimePropagationWasDetected = true;
+bool m_testingEnvironment = true;
 
 void SimulationPreparation(){
-    m_testingEnvironment = true;
     std::vector<Sensor>& allSensorsVectorAddress = m_BMSMonitorInstance.getAllSensorsVectorAddress();
     // set up the sensors and get if a pressure sensor was created
     bool ifPressureSensorExist = m_calibrationInstance.sensorSetup(allSensorsVectorAddress);
@@ -11,10 +22,11 @@ void SimulationPreparation(){
 }
 
 void PropagationStatusOutput(){
-    auto [m_propagationDetected, lastTimePropagationWasDetected] = m_BMSMonitorInstance.evaluateNewTestData(m_calibrationInstance, m_dataToSensorMapperInstance);
+    bool propagationDetected = m_BMSMonitorInstance.evaluateNewTestData(m_calibrationInstance, m_dataToSensorMapperInstance);
     // limited logging during testing for visibility
-    if(m_propagationDetected){
+    if(propagationDetected){
         // Propagation detected. Output: true
+        float lastTimePropagationWasDetected = m_BMSMonitorInstance.getLatestPropagationTimeForTesting();
         if(m_testingEnvironment){
             if(m_firstTimePropagationWasDetected){
                 m_logInstance.logger(LogLevel::ERROR, "Propagation detected in main() at time " + std::to_string(lastTimePropagationWasDetected));
