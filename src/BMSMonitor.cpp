@@ -1,9 +1,10 @@
 #include "BMSMonitor.h"
 
-std::pair<bool, float> BMSMonitor::evaluateNewTestData(Calibration& calibrationInstance, TestDataToSensorMapper& dataMapperInstance){
-    float absoluteDelta = 0.0f;
+bool BMSMonitor::evaluateNewTestData(Calibration& calibrationInstance, TestDataToSensorMapper& dataMapperInstance){
+    m_propagationDetected =  false;
+    float absouteRateOfChange = 0.0f;
     auto [sensorId, dataType] = dataMapperInstance.setNextTestDataPointForSensorAndGetSensorInfo(m_allSensors);
-    // evaluate sensor's value delta and look for propagation if it's beyond threshold
+    // evaluate sensor's absoute rate of change and look for propagation if it's beyond threshold
     if (sensorId >= 0){
         Sensor& currentSensor = m_allSensors[sensorId];
         float deltaTime = currentSensor.getCurrentTime() - currentSensor.getLastTime();
@@ -11,31 +12,31 @@ std::pair<bool, float> BMSMonitor::evaluateNewTestData(Calibration& calibrationI
         switch(dataType){
             case TEMPERATURE:
                 deltaValue = currentSensor.getCurrentTemperature() - currentSensor.getLastTemperature();
-                absoluteDelta = calculateAbsoluteDelta(deltaValue, deltaTime);
-                if (absoluteDelta >= calibrationInstance.getTemperatureThreshold()) {
-                    handleNewIncident(calibrationInstance, sensorId, dataType, absoluteDelta);
+                absouteRateOfChange = calculateAbsoluteRateOfChange(deltaValue, deltaTime);
+                if (absouteRateOfChange >= calibrationInstance.getTemperatureThreshold()) {
+                    handleNewIncident(calibrationInstance, sensorId, dataType, absouteRateOfChange);
                 }
                 break;
             case VOLTAGE:
                 deltaValue = currentSensor.getCurrentVoltage() - currentSensor.getLastVoltage();
-                absoluteDelta = calculateAbsoluteDelta(deltaValue, deltaTime);
-                if (absoluteDelta > calibrationInstance.getVoltageThreshold()) {
-                    handleNewIncident(calibrationInstance, sensorId, dataType, absoluteDelta);
+                absouteRateOfChange = calculateAbsoluteRateOfChange(deltaValue, deltaTime);
+                if (absouteRateOfChange > calibrationInstance.getVoltageThreshold()) {
+                    handleNewIncident(calibrationInstance, sensorId, dataType, absouteRateOfChange);
                 }
                 break;
             case PRESSURE:
                 deltaValue = currentSensor.getCurrentPressure() - currentSensor.getLastPressure();
-                absoluteDelta = calculateAbsoluteDelta(deltaValue, deltaTime);
-                if (absoluteDelta >= calibrationInstance.getPressureThreshold()) {
-                    handleNewIncident(calibrationInstance, sensorId, dataType, absoluteDelta);
+                absouteRateOfChange = calculateAbsoluteRateOfChange(deltaValue, deltaTime);
+                if (absouteRateOfChange >= calibrationInstance.getPressureThreshold()) {
+                    handleNewIncident(calibrationInstance, sensorId, dataType, absouteRateOfChange);
                 }
                 break;
         } 
     }
-    return {m_propagationDetected, m_lastTimePropagationWasDetected};
+    return m_propagationDetected;
 }
 
-float BMSMonitor::calculateAbsoluteDelta(float deltaValue, float deltaTime) {
+float BMSMonitor::calculateAbsoluteRateOfChange(float deltaValue, float deltaTime) {
     float delta = 0.0f;
     if(deltaTime > 0.0f){
         delta = deltaValue / deltaTime;
@@ -87,7 +88,6 @@ void BMSMonitor::setIfPropagationDetected(Calibration& calibrationInstance, std:
                     if(currentIncident.dataType == PRESSURE || latestIncident.dataType == PRESSURE){
                         m_propagationDetected = true;
                         m_lastTimePropagationWasDetected = m_allSensors[latestIncident.sensorId].getCurrentTime();
-
                         return;
                     }
                 }
@@ -132,6 +132,10 @@ void BMSMonitor::setIfPressureSensorExist(bool state) {
 
 std::vector<Sensor>& BMSMonitor::getAllSensorsVectorAddress() {
     return m_allSensors;
+}
+
+float BMSMonitor::getLatestPropagationTimeForTesting(){
+    return m_lastTimePropagationWasDetected;
 }
 
 std::vector<incident> BMSMonitor::getAllIncidentsForTesting(){

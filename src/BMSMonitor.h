@@ -29,7 +29,7 @@ public:
     void eraseAllIncidentsForTesting();
 private:
     Log log;
-    float calculateAbsoluteDelta(float deltaValue, float deltaTime);
+    float calculateAbsoluteRateOfChange(float deltaValue, float deltaTime);
     void handleNewIncident(Calibration& calibrationInstance, short sensorIndex, dataType type, float absoluteDelta);
     
     std::vector<Sensor> m_allSensors;
