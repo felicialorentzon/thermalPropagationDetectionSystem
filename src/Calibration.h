@@ -17,8 +17,7 @@ private:
     void sensorSetupBasedOnResearch(std::vector<Sensor>& allSensors);
     Log log;
     
-    // NOTE: lägg in derivata i namnen om det är rätt ord
-    // Derivata thresholds
+    // Average rate of change thresholds
     float m_temperatureDeltaThreshold = 3.0f;
     float m_voltageDeltaThreshold = 0.01f;
     float m_pressureDeltaThreshold = 3.0f;
