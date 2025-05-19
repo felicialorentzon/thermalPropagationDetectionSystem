@@ -18,10 +18,10 @@ private:
     Log log;
     
     // Average rate of change thresholds
-    float m_temperatureDeltaThreshold = 3.0f;
-    float m_voltageDeltaThreshold = 0.01f;
-    float m_pressureDeltaThreshold = 3.0f;
-    float m_maxDeltaTimeBetweenRelatedIncidents = 60.0f;
+    float m_temperatureARoCThreshold = 3.0f;
+    float m_voltageARoCThreshold = 0.01f;
+    float m_pressureARoCThreshold = 3.0f;
+    float m_maxARoCTimeBetweenRelatedIncidents = 60.0f;
 };
 
 #endif

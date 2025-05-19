@@ -74,24 +74,24 @@ bool Calibration::getIfPressureSensorExist(std::vector<Sensor>& allSensors){
 }
 
 float Calibration::getTemperatureThreshold() {
-    return m_temperatureDeltaThreshold;
+    return m_temperatureARoCThreshold;
 }
 
 float Calibration::getVoltageThreshold() {
-    return m_voltageDeltaThreshold;
+    return m_voltageARoCThreshold;
 }
 
 float Calibration::getPressureThreshold() {
-    return m_pressureDeltaThreshold;
+    return m_pressureARoCThreshold;
 }
 
 float Calibration::getMaxTimeBetweenRelatedIncidents(){
-    return m_maxDeltaTimeBetweenRelatedIncidents;
+    return m_maxARoCTimeBetweenRelatedIncidents;
 }
 
 void Calibration::setThresholdsForTesting(float temperature, float voltage, float pressure, float timeDelta) {
-    m_temperatureDeltaThreshold = temperature;
-    m_voltageDeltaThreshold = voltage;
-    m_pressureDeltaThreshold = pressure;
-    m_maxDeltaTimeBetweenRelatedIncidents = timeDelta;
+    m_temperatureARoCThreshold = temperature;
+    m_voltageARoCThreshold = voltage;
+    m_pressureARoCThreshold = pressure;
+    m_maxARoCTimeBetweenRelatedIncidents = timeDelta;
 }
