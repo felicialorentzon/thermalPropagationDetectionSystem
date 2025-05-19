@@ -2,6 +2,7 @@
 #define BMSMONITOR_H
 
 #include <vector>
+#include <sstream>
 #include "Log.h"
 #include "Sensor.h"
 #include "TestDataToSensorMapper.h"
